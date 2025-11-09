@@ -148,3 +148,71 @@ ISC
 "# contactmanager" 
 "# contactmanager" 
 "# contact-manager" 
+# Contact Manager
+
+A feature-rich contact management application built with React, TypeScript, and Material-UI.
+
+## Features
+
+- Add, edit, and delete contacts
+- Tags and groups support
+- Set reminders with browser notifications
+- Import/Export contacts via CSV
+- Duplicate prevention
+- Sort contacts by name or date added
+- Search across all contact fields including tags
+
+## Live Demo
+
+Visit the live application at: https://paranitharan-k.github.io/contact-manager/
+
+## Development Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Paranitharan-k/contact-manager.git
+cd contact-manager
+```
+
+2. Install dependencies:
+```bash
+npm run install:all
+```
+
+3. Start development servers:
+```bash
+npm run dev
+```
+
+The client will be available at http://localhost:5173 and the server at http://localhost:5000.
+
+## Usage Guide
+
+### Managing Contacts
+
+- **Add Contact**: Click the "Add Contact" button and fill in the details
+- **Edit Contact**: Click the edit icon on any contact card
+- **Delete Contact**: Click the delete icon and confirm
+- **Search**: Use the search bar to find contacts by name, email, phone, company, or tags
+- **Sort**: Use the sort dropdown to sort alphabetically or by recently added
+
+### Tags & Groups
+
+Add tags to contacts by entering comma-separated values in the tags field:
+```
+Family, Friends, Work
+```
+
+### Reminders
+
+1. When adding/editing a contact, set a reminder date/time
+2. The app will show a browser notification when the reminder is due (while the app is open)
+3. Allow notifications when prompted for the best experience
+
+### Import/Export
+
+- **Export**: Click the download icon to export all contacts as CSV
+- **Import**: Click the upload icon and select a CSV file
+	- CSV should have headers: name, email, phone, address, company, notes, tags, reminder
+	- Tags should be semicolon-separated in the CSV
+	- Duplicate contacts will be skipped during import
