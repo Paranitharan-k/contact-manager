@@ -147,3 +147,4 @@ ISC
 "# contact-manager" 
 "# contactmanager" 
 "# contactmanager" 
+"# contact-manager" 
