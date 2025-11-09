@@ -145,3 +145,4 @@ contact-manager/
 
 ISC
 "# contact-manager" 
+"# contactmanager" 
